@@ -1,32 +1,30 @@
-define(['jquery', 'templates/handlebars-compiled.js', 'components/applicationToolbar/applicationToolbar'], function ($, HBS, ApplicationToolbar) {
+define(['jquery', 'templates/handlebars-compiled', 'components/applicationToolbar/applicationToolbar', 'css!pages/app/app'], function ($, HBS, ApplicationToolbar) {
 
-	const appId = '#app';
-	const jqeuryMode = typeof $ === 'function';
+    const appId = '#app';
 
-	function App() {
-		//this.element = $(appId);
-		this.element = document.querySelector(appId);
-		this.options = {
-			template: 'pages/app/app'
-		};
+    function App() {
+        this.element = $(appId);
+        this.options = {
+            template: 'pages/app/app'
+        };
 
-		this.renderLayout();
-		this.bindListeners();
+        this.renderLayout();
+        this.bindListeners();
 
-		return this;
-	}
+        return this;
+    }
 
-	App.prototype.renderLayout = function () {
-		this.element.innerHTML = HBS[this.options.template]({});
+    App.prototype.renderLayout = function () {
+        this.element.html(HBS[this.options.template]({}));
 
-		//render the toolbar
-		this._appToolbar = new ApplicationToolbar({}, this.element.find('.app-toolbar'));
-	};
+        //render the toolbar
+        this._appToolbar = new ApplicationToolbar({}, this.element.find('.app-toolbar'));
+    };
 
-	App.prototype.bindListeners = function () {
-		/*do nothing for now*/
-	};
+    App.prototype.bindListeners = function () {
+        /*do nothing for now*/
+    };
 
-	return App;
+    return App;
 });
 

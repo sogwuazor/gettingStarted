@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 					amd: true
 				},
 				files: (function() {
-					var files = {};
+					let files = {};
 
 					files['web/templates/handlebars-compiled.js'] = ['web/**/*.hbs'];
 					return files;
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
 
 	/*register tasks*/
 	grunt.registerTask('concurrent', ['concurrent']);
-	grunt.registerTask('runBackEnd', ['shell:connect']);
+	grunt.registerTask('runbackend', ['shell:connect']);
 	grunt.registerTask('startserve', 'Start the web server and watch tasks', ['handlebars', 'watch']);
 	grunt.registerTask('default', function() {
 		grunt.task.run('handlebars');

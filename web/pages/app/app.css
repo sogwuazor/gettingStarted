@@ -1,0 +1,21 @@
+.app-toolbar {
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.app-container {
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.app-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    max-height: 40px;
+    overflow: hidden;
+}

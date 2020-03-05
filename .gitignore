@@ -1,1 +1,5 @@
+# ignore node_modules
 node_modules
+
+# ignore handlebars-compiled please remove when going pubic
+web/templates/handlebars-compiled.js

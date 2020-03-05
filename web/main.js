@@ -1,23 +1,27 @@
 /** Bootstrap*/
 requirejs.config({
-	baseUrl: '',
-	nodeRequire: require,
-	paths: {
-		app: 'app',
-		'jquery': 'scripts/jquery/dist/jquery.min',
-		'handlebars': 'scripts/handlebars/dist/handlebars.min'
-	},
-	shim: {
-		'handlebars': {
-			exports: 'Handlebars'
-		}
-	}
+    baseUrl: '',
+    nodeRequire: require,
+    paths: {
+        'jquery': 'scripts/jquery/dist/jquery.min',
+        'handlebars': 'scripts/handlebars/dist/handlebars.min'
+    },
+    map: {
+        '*': {
+            'css': 'scripts/require-css/css'
+        }
+    },
+    shim: {
+        'handlebars': {
+            exports: 'Handlebars'
+        }
+    }
 });
 
-requirejs(['app'], function(App) {
-	'use strict';
+requirejs(['app'], function (App) {
+    'use strict';
 
-	/*launch the app*/
-	const app = new App();
-
+    /*launch the app*/
+    const app = new App();
+    debugger;
 });

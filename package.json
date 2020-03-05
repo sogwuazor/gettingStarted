@@ -2,6 +2,7 @@
   "name": "singlePageApp",
   "version": "1.0.0",
   "description": "Sample single page application",
+  "repository": "https://github.com/sogwuazor/gettingStarted.git",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,19 +11,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "grunt": "^1.0.4",
-    "grunt-contrib-handlebars": "^2.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-shell": "^3.0.1",
-    "handlebars": "^4.7.3",
-    "jquery": "^3.4.1",
-    "load-grunt-tasks": "^5.1.0",
-    "require": "^2.4.20",
-    "requirejs": "^2.3.6",
-    "semantic-ui-css": "^2.4.1",
-    "vanilla-router": "^1.2.7"
+    "axios": "0.19.2",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "grunt": "1.0.4",
+    "grunt-cli": "1.3.2",
+    "grunt-contrib-handlebars": "2.0.0",
+    "grunt-contrib-watch": "1.1.0",
+    "grunt-shell": "3.0.1",
+    "handlebars": "4.7.3",
+    "jquery": "3.4.1",
+    "load-grunt-tasks": "5.1.0",
+    "require": "2.4.20",
+    "require-css": "0.1.10",
+    "requirejs": "2.3.6",
+    "semantic-ui-css": "2.4.1",
+    "vanilla-router": "1.2.7"
   }
 }

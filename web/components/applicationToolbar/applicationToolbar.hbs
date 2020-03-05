@@ -1,11 +1,16 @@
 <div class="ua-header-toolbar" aria-label="{{ariaLabel}}" title="{{title}}" tabindex="0">
     <div class="ua-header-brand">
+        <span class="ua-page-title">Unassailent Technologies</span>
         <!--Let this be anything we can come up with.-->
         {{!-- <img src="{{imageSrc}}" class="brand"> --}}
     </div>
     <div class="toolbar-group-items" role="menubar">
         {{#each items}}
-            <div class="toolbar-menu {{this.class}}" aria-label="{{this.ariaLabel}}" tabindex="0">{{this.label}}</div>
+            <div class="toolbar-menu {{this.class}}" data-action="{{this.action}}" aria-label="{{this.ariaLabel}}" tabindex="0">{{this.label}}</div>
         {{/each}}
+    </div>
+    <div class="ua-page-contact">
+        {{!--The page contact options. Fun isn't it--}}
+        Contact me
     </div>
 </div>
