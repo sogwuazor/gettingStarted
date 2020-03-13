@@ -6,7 +6,7 @@
     </div>
     <div class="toolbar-group-items" role="menubar">
         {{#each items}}
-            <div class="toolbar-menu {{this.class}}" data-action="{{this.action}}" aria-label="{{this.ariaLabel}}" tabindex="0">{{this.label}}</div>
+            <div class="toolbar-menu {{this.class}} {{#if this.active}}item-active{{/if}}" data-action="{{this.action}}" aria-label="{{this.ariaLabel}}" tabindex="0">{{this.label}}</div>
         {{/each}}
     </div>
     <div class="ua-page-contact">

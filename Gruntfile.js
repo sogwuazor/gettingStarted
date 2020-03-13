@@ -62,7 +62,7 @@ module.exports = function (grunt) {
 	/*register tasks*/
 	grunt.registerTask('concurrent', ['concurrent']);
 	grunt.registerTask('runbackend', ['shell:connect']);
-	grunt.registerTask('startserve', 'Start the web server and watch tasks', ['handlebars', 'watch']);
+	grunt.registerTask('server', 'Start the web server and watch tasks', ['handlebars', 'watch']);
 	grunt.registerTask('default', function() {
 		grunt.task.run('handlebars');
 		grunt.task.run('shell:connect');
