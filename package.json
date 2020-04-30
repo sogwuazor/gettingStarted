@@ -20,7 +20,7 @@
     "grunt-contrib-watch": "1.1.0",
     "grunt-shell": "3.0.1",
     "handlebars": "4.7.3",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "load-grunt-tasks": "5.1.0",
     "require": "2.4.20",
     "require-css": "0.1.10",
